@@ -1,0 +1,5 @@
+---
+hostname: registry.reiciunas.dev
+
+httpRoute:
+  enabled: true

@@ -1,0 +1,6 @@
+---
+include:
+  - project: reiciunas/ci-include
+    file:
+      - base.yml
+      - helm.yml

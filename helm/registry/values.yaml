@@ -1,0 +1,31 @@
+---
+gateway:
+  enabled: false
+
+  className: cilium
+  clusterIssuerName: letsencrypt-staging
+  name: cilium-gateway
+
+hostname: registry.example.com
+
+httpRoute:
+  enabled: false
+
+  gateway:
+    name: cilium
+    namespace: default
+
+ingress:
+  enabled: false
+
+  className: nginx
+  clusterIssuerName: letsencrypt-staging
+
+service:
+  port: 5000
+  type: ClusterIP
+
+storage:
+  selector:
+  size: 10Gi
+  storageClass:
